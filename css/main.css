@@ -175,14 +175,12 @@ body {
     }
 
     .container {
-        padding-right: 10px;
-        width: 90%;
-        border-right: 5px solid black;
+        width: 100%;
     }
 
     .content h1 {
         font-size: 30px;
-        text-align: right;
+        text-align: center;
     }
 
     .job h2,
