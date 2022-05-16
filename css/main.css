@@ -87,7 +87,7 @@ body {
     margin: 0;
     font-family: 'Default Font Name', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 120px;
 }
 
 .job h2,
@@ -135,8 +135,8 @@ body {
 }
 
 .contact ul li img {
-    height: 64px;
-    width: 64px;
+    height: 32px;
+    width: 32px;
 }
 
 .clearfix::after {
@@ -179,7 +179,7 @@ body {
     }
 
     .content h1 {
-        font-size: 30px;
+        font-size: 60px;
         text-align: center;
     }
 
@@ -193,7 +193,7 @@ body {
     }
 
     .contact ul li img {
-        height: 40px;
-        width: 40px;
+        height: 16px;
+        width: 16px;
     }
 }
