@@ -33,17 +33,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'Inter';
-            font-display: swap;
-            src: local('Inter');
-        }
-    </style>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"></noscript>
 
-    
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
@@ -54,7 +46,7 @@
     })(window,document,'script','dataLayer','GTM-WGBTJMV');</script>
     <!-- End Google Tag Manager -->
 
-    <script type="application/ld+json" defer>
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -394,31 +386,6 @@ title="Google Tag Manager" height="0" width="0" style="display:none;visibility:h
         sections.forEach(function(section) { sectionObserver.observe(section); });
     })();
 
-    (() => {
-        var nav = document.querySelector('.nav');
-        var threshold = 100;
-        var lastScrollY = 0;
-        var ticking = false;
-
-        function updateNav() {
-            var scrollY = window.scrollY;
-            
-            if (scrollY > threshold) {
-                nav.classList.add('is-scrolled');
-            } else {
-                nav.classList.remove('is-scrolled');
-            }
-            
-            ticking = false;
-        }
-
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                window.requestAnimationFrame(updateNav);
-                ticking = true;
-            }
-        }, { passive: true });
-    })();
 </script>
 </body>
 </html>
