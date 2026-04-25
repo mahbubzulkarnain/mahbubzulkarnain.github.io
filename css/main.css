@@ -79,7 +79,7 @@ h1, h2, h3 {
 }
 
 .hero-content {
-    flex: 1;
+    flex: 2;
     min-width: 0;
     display: flex;
     flex-direction: column;
@@ -157,7 +157,7 @@ h1, h2, h3 {
 }
 
 .hero-photo {
-    flex: 0 0 380px;
+    flex: 1;
     display: flex;
 }
 
@@ -338,15 +338,27 @@ h1, h2, h3 {
     gap: 28px;
 }
 
+.skill-group {
+    display: flex;
+    gap: 32px;
+}
+
 .skill-group-title {
+    flex: 0 0 160px;
+    position: sticky;
+    top: 24px;
+    align-self: flex-start;
+    background-color: #F8F8F8;
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #666666;
-    margin-bottom: 10px;
+    padding-top: 2px;
 }
 
 .skill-tags {
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -480,6 +492,16 @@ h1, h2, h3 {
 /* ─── RESPONSIVE — mobile ─────────────────── */
 
 @media screen and (max-width: 480px) {
+    .skill-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-group-title {
+        position: static;
+        flex: none;
+    }
+
     .hero {
         padding: 72px 20px 48px;
     }
